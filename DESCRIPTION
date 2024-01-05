@@ -6,6 +6,7 @@ Authors@R:
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: his package is used as a demo for a simple package for the course MATH 3190 at Southern Utah University. 
 License: MIT + file LICENSE
+URL: https://github.com/rbrown53/mypackage2
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
@@ -19,4 +20,6 @@ LazyData: true
 Suggests: 
     knitr,
     rmarkdown
+Author: Rick Brown [aut, cre]
+Maintainer: Rick Brown <richardbrown1@suu.edu>
 VignetteBuilder: knitr
