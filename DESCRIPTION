@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Rick", "Brown", , "richardbrown1@suu.edu", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: his package is used as a demo for a simple package for the course MATH 3190 at Southern Utah University. 
+Description: This package is used as a demo for a simple package for the course MATH 3190 at Southern Utah University. It contains functions on adding, subtracting, saying "hello", and graphing a simple scatterplot.
 License: MIT + file LICENSE
 URL: https://github.com/rbrown53/mypackage2
 Encoding: UTF-8
