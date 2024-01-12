@@ -6,7 +6,7 @@ Authors@R:
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: This package is used as a demo for a simple package for the course MATH 3190 at Southern Utah University. It contains functions on adding, subtracting, and graphing a simple scatterplot.
 License: MIT + file LICENSE
-URL: https://github.com/rbrown53/mypackage2
+URL: https://github.com/rbrown53/mypackage
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
