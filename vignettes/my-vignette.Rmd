@@ -30,7 +30,7 @@ This package also includes the data set called `cranes`. This is a simple data s
 
 ## Examples
 
-```{r examples, echo = T, eval = T}
+```{r examples, echo = T, eval = T, fig.width=6,fig.height = 4}
 library(mypackage)
 add(100, 50) # Adds the two numbers and gives the output
 subtract(100, 50) # Subtracts the second number from the first 
@@ -38,6 +38,7 @@ hello() # Gives the message "hello world"
 
 # The following is an example for ggraph:
 p <- ggraph(x = cranes$year, y = cranes$cranes) # Gives a simple scatter plot
+p
 
 # p is a ggplot object, so we can add onto it using ggplot functions
 p + labs(x = "Year", y = "Number of Cranes", 
