@@ -30,7 +30,7 @@ This package also includes the data set called `cranes`. This is a simple data s
 
 ## Examples
 
-```{r examples}
+```{r examples, echo = T, eval = T}
 library(mypackage)
 add(100, 50) # Adds the two numbers and gives the output
 subtract(100, 50) # Subtracts the second number from the first 
