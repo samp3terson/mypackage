@@ -20,15 +20,35 @@ Vignettes are long form documentation commonly included in packages. Because the
 - Has a smaller default figure size
 - Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
 
-## Load Dependencies
+# mypackage
 
-```{r load}
-library(tidyverse)
+## Intro
+
+This mypackage **R** package is one that we will be modifying in Math 3190. It starts out with four functions: `add()`, `ggraph()`, `hello()`, and `subtract()`. All of these are quite simple except the `ggraph()`, which depends on `ggplot2` and gives a quick way to create a scatter plot with two vectors. 
+
+This package also includes the data set called `cranes`. This is a simple data set that contains information about the number of cranes at Aransas National Wildlife Refuge in Austwell, Texas by year from 1938 to 2016.
+
+## Examples
+
+```{r examples}
+library(mypackage)
+add(100, 50) # Adds the two numbers and gives the output
+subtract(100, 50) # Subtracts the second number from the first 
+hello() # Gives the message "hello world"
+
+# The following is an example for ggraph:
+p <- ggraph(x = cranes$year, y = cranes$cranes) # Gives a simple scatter plot
+
+# p is a ggplot object, so we can add onto it using ggplot functions
+p + labs(x = "Year", y = "Number of Cranes", 
+         title = "Number of Cranes at Aransas National Wildlife Refuge") +
+  scale_y_continuous(breaks = seq(0, 350, by = 50)) +
+  scale_x_continuous(breaks = seq(1940, 2010, by = 10))
 ```
 
 
 
-## Vignette Info
+# Other Vignette Info 
 
 Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
 
