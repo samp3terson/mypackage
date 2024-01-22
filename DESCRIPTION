@@ -16,7 +16,8 @@ Depends:
     shiny
 Imports: 
     magrittr,
-    tidyverse
+    tidyverse,
+    plotly
 LazyData: true
 Suggests: 
     knitr,

@@ -5,7 +5,7 @@ ui <- fluidPage(
     inputId = "submit_guess",
     label = "Submit Guess"
   ),
-  plotOutput("graph"),
+  plotly::plotlyOutput("graph"),
   textOutput("message"),
   actionButton("reset_input", "Press to Play Again!")
 )
@@ -17,9 +17,10 @@ server <- function(input, output, session) {
   y <- sign(runif(1, -1, 1))*x + rnorm(100, 0, 10)
   true_cor <- cor(x, y)
   
-  output$graph <- renderPlot(
-    ggraph(x, y, point_size = 3)
-  )
+  output$graph <- plotly::renderPlotly({
+    p <- ggraph(x, y, point_size = 2)
+    plotly::ggplotly(p)
+  })
   
   observeEvent(
     eventExpr = input[["submit_guess"]],
