@@ -9,10 +9,11 @@ License: MIT + file LICENSE
 URL: https://github.com/rbrown53/mypackage
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.0
 Depends: 
     R (>= 2.10),
-    ggplot2
+    ggplot2,
+    shiny
 Imports: 
     magrittr,
     tidyverse

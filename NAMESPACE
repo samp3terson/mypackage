@@ -3,6 +3,7 @@
 export(add)
 export(ggraph)
 export(hello)
+export(runCor)
 export(subtract)
 import(ggplot2)
 import(magrittr)
