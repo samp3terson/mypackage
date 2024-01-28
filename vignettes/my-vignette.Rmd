@@ -24,9 +24,9 @@ Vignettes are long form documentation commonly included in packages. Because the
 
 ## Intro
 
-This mypackage **R** package is one that we will be modifying in Math 3190. It starts out with four functions: `add()`, `ggraph()`, `hello()`, and `subtract()`. All of these are quite simple except the `ggraph()`, which depends on `ggplot2` and gives a quick way to create a scatter plot with two vectors. 
+This mypackage **R** package is one that we will be modifying in Math 3190. It starts out with six functions: `add()`, `multiply()`, `divide()`, `ggraph()`, `hello()`, and `subtract()`. All of these are quite simple except the `ggraph()`, which depends on `ggplot2` and gives a quick way to create a scatter plot with two vectors. 
 
-This package also includes the data set called `cranes`. This is a simple data set that contains information about the number of cranes at Aransas National Wildlife Refuge in Austwell, Texas by year from 1938 to 2016.
+This package also includes two data sets called `cranes` and `brainbody`. These are simple data sets that contain different information. `cranes` information about the number of cranes at Aransas National Wildlife Refuge in Austwell, Texas by year from 1938 to 2016. `brainbody` contains information regarding different species of animals, including the mass/size of brains and bodys as well as the litter size of the species.
 
 ## Examples
 
@@ -34,6 +34,8 @@ This package also includes the data set called `cranes`. This is a simple data s
 library(mypackage)
 add(100, 50) # Adds the two numbers and gives the output
 subtract(100, 50) # Subtracts the second number from the first 
+multiply(23, 3) # Multiplys the two numbers and gives output
+divide(1173, 33) # Divides the first number by the second and gives the output
 hello() # Gives the message "hello world"
 
 # The following is an example for ggraph:

@@ -1,10 +1,11 @@
 Package: mypackage
 Title: Demo Package as an Example
-Version: 0.0.0.9000
+Version: 0.0.1.0000
 Authors@R: 
-    person("Rick", "Brown", , "richardbrown1@suu.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: This package is used as a demo for a simple package for the course MATH 3190 at Southern Utah University. It contains functions on adding, subtracting, and graphing a simple scatterplot.
+    c(person("Rick", "Brown", , "richardbrown1@suu.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID")),
+           person("Sam","Peterson","p3tey5@gmail.com",role="aut"))
+Description: This package is used as a demo for a simple package for the course MATH 3190 at Southern Utah University. It contains functions on adding, subtracting,multiplying, dividing, and graphing a simple scatterplot.
 License: MIT + file LICENSE
 URL: https://github.com/rbrown53/mypackage
 Encoding: UTF-8
